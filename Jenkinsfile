@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        BRANCH_NAME = "origin/main"
-    }
     stages {
         stage('Clone code') {
             steps {
