@@ -14,7 +14,7 @@ pipeline {
     }
     post { 
         always { 
-            emailext body: '', subject: '', to: 'tu.phunganh@gmail.com'
+            emailext body: '${DEFAULT_CONTENT}', subject: '${DEFAULT_SUBJECT}', to: 'tu.phunganh@gmail.com'
         }
     }
 }
