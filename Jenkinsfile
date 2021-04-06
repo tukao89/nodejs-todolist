@@ -11,5 +11,10 @@ pipeline {
                 sh 'docker build -t nodejs-todolist .'
             }
         }
+        state('Mail'){
+            steps {
+                emailext body: 'xxxx', subject: 'aaaa', to: 'tu.phunganh@gmail.com'
+            }
+        }
     }
 }
